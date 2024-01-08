@@ -12,14 +12,14 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: https://al3xback.github.io/fmentor-four-card-mocha/
+- Live Site URL: https://al3xback.github.io/fmentor-four-card-mocha-shouldjs/
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- Mocha Testing
+- Mocha - Should.js Testing
 - Mobile-first workflow
 
 ## Author
