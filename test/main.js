@@ -41,14 +41,14 @@ describe('DOM', () => {
 		isStrongElExist.should.be.true();
 	});
 
-	it('should have empty alt attribute value of each of card image element', () => {
-		const cardImageElements = document.querySelectorAll('.card__image img');
+	it('should have empty alt attribute value of each of card list item image element', () => {
+		const cardItemImageElements = document.querySelectorAll('.card__image img');
 
 		const altValues = [];
 
-		for (let i = 0; i < cardImageElements.length; i++) {
-			const cardImageAlt = cardImageElements[i].getAttribute('alt');
-			altValues.push(cardImageAlt);
+		for (let i = 0; i < cardItemImageElements.length; i++) {
+			const cardItemImageAlt = cardItemImageElements[i].getAttribute('alt');
+			altValues.push(cardItemImageAlt);
 		}
 
 		altValues.should.matchEach('');
