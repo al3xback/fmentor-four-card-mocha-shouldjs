@@ -42,15 +42,15 @@ describe('DOM', () => {
 	});
 
 	it('should have empty alt attribute value of each of card list item image element', () => {
-		const cardItemImageElements = document.querySelectorAll('.card__image img');
+		const cardListItemImgEls = document.querySelectorAll('.card__image img');
 
-		const altValues = [];
+		const imgAlts = [];
 
-		for (let i = 0; i < cardItemImageElements.length; i++) {
-			const cardItemImageAlt = cardItemImageElements[i].getAttribute('alt');
-			altValues.push(cardItemImageAlt);
+		for (let i = 0; i < cardListItemImgEls.length; i++) {
+			const cardListItemImgAlt = cardListItemImgEls[i].getAttribute('alt');
+			imgAlts.push(cardListItemImgAlt);
 		}
 
-		altValues.should.matchEach('');
+		imgAlts.should.matchEach('');
 	});
 });
