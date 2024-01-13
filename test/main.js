@@ -42,12 +42,14 @@ describe('DOM', () => {
 	});
 
 	it('should have empty alt attribute value of each of card list item image element', () => {
-		const cardListItemImgEls = document.querySelectorAll('.card__image img');
+		const cardListItemImgEls =
+			document.querySelectorAll('.card__image img');
 
 		const imgAlts = [];
 
 		for (let i = 0; i < cardListItemImgEls.length; i++) {
-			const cardListItemImgAlt = cardListItemImgEls[i].getAttribute('alt');
+			const cardListItemImgAlt =
+				cardListItemImgEls[i].getAttribute('alt');
 			imgAlts.push(cardListItemImgAlt);
 		}
 
