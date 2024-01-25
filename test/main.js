@@ -28,8 +28,9 @@ describe('DOM', () => {
 	});
 
 	it("should have a word 'Technology' in section subtitle element", () => {
-		const sectionSubtitle =
-			document.querySelector('.section__subtitle').textContent;
+		const sectionSubtitle = document.querySelector(
+			'.cards-summary__subtitle'
+		).textContent;
 
 		sectionSubtitle.should.match(/Technology/g);
 	});
